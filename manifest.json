@@ -3,16 +3,13 @@
     "name": "Press skip ad button!",
     "description": "Automatically skip YT ads",
     "version": "1.0",
-    "permissions": [
-        "tabs"
-    ],
     "icons": {
         "50": "skip.png"
     },
     "content_scripts": [
         {
             "matches": [
-                "https://*.youtube.com/watch*"
+                "https://*.youtube.com/*"
             ],
             "js": [
                 "index.js"
